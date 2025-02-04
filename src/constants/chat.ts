@@ -29,13 +29,14 @@ export const modelOptions: ModelOptions[] = [
   'gpt-4-turbo',
   'gpt-4-turbo-2024-04-09',
   'gpt-4o',
-  'gpt-4o-2024-05-13',
+'gpt-4o-2024-05-13',
+'deepseek-ai/DeepSeek-R1'
   // 'gpt-3.5-turbo-0301',
   // 'gpt-4-0314',
   // 'gpt-4-32k-0314',
 ];
 
-export const defaultModel = 'gpt-3.5-turbo';
+export const defaultModel = 'deepseek-ai/DeepSeek-R1';
 
 export const modelMaxToken = {
   'gpt-3.5-turbo': 4096,
@@ -56,7 +57,8 @@ export const modelMaxToken = {
   'gpt-4-turbo': 128000,
   'gpt-4-turbo-2024-04-09': 128000,
   'gpt-4o': 128000,
-  'gpt-4o-2024-05-13': 128000,
+    'gpt-4o-2024-05-13': 128000,
+  'deepseek-ai/DeepSeek-R1': 256000
 };
 
 export const modelCost = {
@@ -133,6 +135,10 @@ export const modelCost = {
     completion: { price: 0.015, unit: 1000 },
   },
   'gpt-4o-2024-05-13': {
+    prompt: { price: 0.005, unit: 1000 },
+    completion: { price: 0.015, unit: 1000 },
+  },
+  'deepseek-ai/DeepSeek-R1': {
     prompt: { price: 0.005, unit: 1000 },
     completion: { price: 0.015, unit: 1000 },
   },
